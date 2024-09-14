@@ -55,7 +55,7 @@ jobs:
         run: npm run build
         
       - name: Enable error page
-        continue-on-error: false
+        continue-on-error: true
         run: mkdir -p out && cp public/error.html out/error.html
 
       - name: CI & Updates
