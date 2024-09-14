@@ -30,7 +30,8 @@ const nextConfig = {
         ))
         // Important: return the modified config
         return config
-    }
+    },
+    output: 'export',
 }
 
 module.exports = nextConfig

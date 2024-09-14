@@ -52,11 +52,11 @@ jobs:
         
       - name: build project
         continue-on-error: false
-        run: npm run build && npx next export -o build
+        run: npm run build
         
       - name: Enable error page
         continue-on-error: false
-        run: mkdir -p build && cp public/error.html build/error.html
+        run: mkdir -p out && cp public/error.html out/error.html
 
       - name: CI & Updates
         env:
@@ -67,8 +67,8 @@ jobs:
 
       - name: Verify build directory
         run: |
-          ls build
-          EXISTS=$(ls build)
+          ls out
+          EXISTS=$(ls out)
           if [[ -z "$EXISTS" ]]; then
             exit 1;
           fi
@@ -76,8 +76,8 @@ jobs:
       - name: Uploading build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: build
-          path: build/
+          name: out
+          path: out/
           if-no-files-found: error
           retention-days: 1
           compression-level: 9
@@ -92,8 +92,8 @@ jobs:
       - name: Download Build artifacts
         uses: actions/download-artifact@v4
         with:
-          name: build
-          path: build/
+          name: out
+          path: out/
 
       - name: Setup SSH configuration
         run: |
@@ -113,8 +113,8 @@ jobs:
         continue-on-error: false
         run: |
           set -x
-          ls build/
+          ls out/
           ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SSH_PATH"
-          rsync -avz --delete -e 'ssh -o StrictHostKeyChecking=no' build/ $SSH_USER@$SSH_HOST:$SSH_PATH/
+          rsync -avz --delete -e 'ssh -o StrictHostKeyChecking=no' out/ $SSH_USER@$SSH_HOST:$SSH_PATH/
           echo deployed
 
