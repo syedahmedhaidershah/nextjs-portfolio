@@ -2,40 +2,105 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import data from "../assets/data/portfolio.json";
+import SkillChip from "./SkillChip";
+import HorizontalImageTextCard from "./HorizontalImageTextCard";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+      <div>
+        {
+          Object
+            .keys(data.displaySkillsCategorized)
+            .map((key, index) => {
+              const skills = data.displaySkillsCategorized[key];
+
+              return <div key={"skill-heading" + index}>
+                <h1
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  data-aos-duration="100"
+                  className="tablet:m-1 mt-5 py-3 mobile:text-2xl tablet:text-2xl laptop:text-2xl desktop:text-2xl text-bold">{key}</h1>
+                <div
+                  data-aos="fade-up-left"
+                  data-aos-delay="0"
+                  data-aos-duration="100"
+                  className="mt-0 tablet:mx-1 grid tablet:grid-cols-2 laptop:grid-cols-6 desktop:grid-cols-8 gap-4 grid-cols-2">
+                  {
+                    skills
+                      .map((skill, index) => (
+                        <SkillChip key={index} name={skill.name} color={skill.color} starred={skill.starred} />))
+                  }
+                </div>
+              </div>
+            })
+        }
+      </div>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
+      <div className="list-disc pl-2">
+        {
+          data.resume.education.map((degree, index) => {
+            return <Link
+              key={"degree-" + index}
+              href={degree.site} target="_blank">
+              <HorizontalImageTextCard
+                image={degree.image}
+                alt={`${degree.degree} ${degree.major}`}
+                injectContent={
+                  <div className="p-3 flex flex-col flex-initial justify-center align-middle w-12/12 laptop:w-8/12 laptop:pl-10 rounded-2xltext-black text-black">
+                    <div class="text-2xl mob:text-xl italic">{degree.degree}</div>
+                    <div class="text-2xl mob:text-xl font-bold">{degree.major}</div>
+                    <div class="text-lg mob:text-base">{degree.institute}</div>
+                    <div class="text-lg mob:text-base">{degree.duration}</div>
+                  </div>
+                } />
+            </Link>
+          })
+        }
+      </div>
     ),
   },
   {
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
+      <div className="list-disc pl-2">
+        {
+          data.resume.certification.map((certificate, index) => {
+            return <Link
+              key={"certificate-" + index}
+              href={certificate.link} target="_blank">
+              <HorizontalImageTextCard
+                options={{ imageMargin: true }}
+                image={certificate.image}
+                alt={`${certificate.name}`}
+                injectContent={
+                  <div className="p-3 flex flex-col flex-initial justify-center align-middle w-12/12 laptop:w-8/12 laptop:pl-10 rounded-2xltext-black text-black">
+                    <div class="text-4xl mob:text-2xl">{certificate.name}</div>
+                    <div class="text-lg mob:text-base">{certificate.organization}</div>
+                    <div class="text-lg mob:text-base">{certificate.issueDate}</div>
+                    <div class="text-xs mob:text-sm">{certificate.credentialID}</div>
+                  </div>
+                } />
+            </Link>
+            // <li key={"certificate-" + index}>
+            //   <div class="text-4xl mob:text-2xl">{certificate.name}</div>
+            //   <div class="text-lg mob:text-base">{certificate.organization}</div>
+            //   <div class="text-lg mob:text-base">{certificate.issueDate}</div>
+            //   <div class="text-xs mob:text-sm">{certificate.credentialID}</div>
+            // </li>
+          })
+        }
+      </div>
     ),
   },
 ];
@@ -51,20 +116,27 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+    <section
+      className="text-white" id="about">
+      <div className="md:grid md:grid-cols-1 gap-8 items-center py-8 sm:px-1 mob:px-1 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        {/* <Image src="/images/about-image.png" width={500} height={500} alt="Sample work image" /> */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          <h2
+            data-aos="fade-up-right"
+            data-aos-delay="50"
+            className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <p
+            data-aos="fade-up-left"
+            data-aos-delay="50"
+            className="text-base lg:text-xl md:text-lg mb-10">
+            {data.aboutpara.map((paraLine, index) => {
+              return <span key={'about-paraline-' + index}>{paraLine}<br /><br /></span>;
+            })}
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -87,7 +159,10 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

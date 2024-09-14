@@ -17,8 +17,20 @@ module.exports = {
     colors: {
       ...colors,
       primary: colors.purple,
-      secondary: colors.pink,
+      secondary: colors.blue,
     },
+    screens: {
+      mob: "375px",
+      mobile: "375px",
+      tablet: "768px",
+      sm: "768px",
+      laptop: "1024px",
+      md: "1024px",
+      desktop: "1280px",
+      lg: "1280px",
+      laptopl: "1440px",
+    },
+    extend: {},
   },
   plugins: [],
 };
