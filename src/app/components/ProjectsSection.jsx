@@ -5,16 +5,6 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 import data from '../assets/data/portfolio.json';
 
-console.log(
-  data.projects
-      .map(
-        (project, index) => ({
-          id: index + 1,
-          ...project,
-        })
-      )
-)
-
 const projectsData = [
   ...(
     data.projects

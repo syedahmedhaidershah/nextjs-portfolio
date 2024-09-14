@@ -631,10 +631,6 @@
                 "starred": true
             },
             {
-                "name": "Next.js",
-                "color": "bg-lime-600"
-            },
-            {
                 "name": "Express",
                 "color": "bg-lime-600",
                 "starred": true
@@ -643,10 +639,6 @@
                 "name": "Angular 2+",
                 "color": "bg-lime-600",
                 "starred": true
-            },
-            {
-                "name": "React",
-                "color": "bg-lime-600"
             },
             {
                 "name": "Javascript",
@@ -660,6 +652,14 @@
             },
             {
                 "name": "Python",
+                "color": "bg-lime-600"
+            },
+            {
+                "name": "React",
+                "color": "bg-lime-600"
+            },
+            {
+                "name": "Next.js",
                 "color": "bg-lime-600"
             },
             {
@@ -715,10 +715,6 @@
                 "starred": true
             },
             {
-                "name": "Kubernetes",
-                "color": "bg-orange-600"
-            },
-            {
                 "name": "Terraform",
                 "color": "bg-blue-600",
                 "starred": true
@@ -729,13 +725,17 @@
                 "starred": true
             },
             {
+                "name": "Nginx",
+                "color": "bg-blue-600",
+                "starred": true
+            },
+            {
                 "name": "Grafana",
                 "color": "bg-rose-800"
             },
             {
-                "name": "Nginx",
-                "color": "bg-blue-600",
-                "starred": true
+                "name": "Kubernetes",
+                "color": "bg-orange-600"
             }
         ],
         "DevOps and CI/CD": [
@@ -801,10 +801,6 @@
                 "starred": true
             },
             {
-                "name": "Warehousing",
-                "color": "bg-violet-900"
-            },
-            {
                 "name": "Architecture",
                 "color": "bg-violet-900",
                 "starred": true
@@ -823,6 +819,10 @@
                 "name": "SE Principles",
                 "color": "bg-violet-900",
                 "starred": true
+            },
+            {
+                "name": "Warehousing",
+                "color": "bg-violet-900"
             }
         ]
     },

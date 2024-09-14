@@ -7,10 +7,23 @@ const {
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: [
-            'lh3.googleusercontent.com',
-            'syedahmedhaidershah.com',
-            'localhost',
+        unoptimized: true,
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'lh3.googleusercontent.com',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'syedahmedhaidershah.com',
+                pathname: '/**',
+            },
+            {
+                protocol: 'http',
+                hostname: 'localhost',
+                pathname: '/**',
+            },
         ],
     },
     webpack: (
@@ -21,7 +34,7 @@ const nextConfig = {
             defaultLoaders,
             nextRuntime,
             webpack
-        }
+        },
     ) => {
         config.plugins = config.plugins || []
         config.plugins.push(new NormalModuleReplacementPlugin(

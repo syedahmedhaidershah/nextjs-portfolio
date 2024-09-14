@@ -16,10 +16,10 @@ const TAB_DATA = [
         {
           Object
             .keys(data.displaySkillsCategorized)
-            .map((key, index) => {
+            .map((key, categoryIndex) => {
               const skills = data.displaySkillsCategorized[key];
 
-              return <div key={"skill-heading" + index}>
+              return <div key={"skill-heading" + categoryIndex}>
                 <h1
                   data-aos="fade-up"
                   data-aos-delay="0"
@@ -32,8 +32,8 @@ const TAB_DATA = [
                   className="mt-0 tablet:mx-1 grid tablet:grid-cols-2 laptop:grid-cols-6 desktop:grid-cols-8 gap-4 grid-cols-2">
                   {
                     skills
-                      .map((skill, index) => (
-                        <SkillChip key={index} name={skill.name} color={skill.color} starred={skill.starred} />))
+                      .map((skill, skillIndex) => (
+                        <SkillChip key={key+"-"+skillIndex} index={skillIndex} name={skill.name} color={skill.color} starred={skill.starred} />))
                   }
                 </div>
               </div>

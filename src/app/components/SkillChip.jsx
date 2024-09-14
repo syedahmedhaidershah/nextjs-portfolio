@@ -15,7 +15,7 @@ const badgeStyle = {
 };
 
 
-const SkillChip = ({ name, color, starred = false }) => {
+const SkillChip = ({ index, name, color, starred = false }) => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState();
   const [className, setClassName] = useState(`relative grid select-none items-center whitespace-nowrap rounded-lg py-2 px-3 font-sans text-xs font-bold uppercase text-white`);
@@ -28,9 +28,9 @@ const SkillChip = ({ name, color, starred = false }) => {
 
   return (
     <div
-      data-aos={starred ? "fade-up-left" : "fade-up-right"}
+      data-aos={starred ? "fade-up-right" : "fade-up-left"}
       data-aos-delay="0"
-      data-aos-duration={starred ? "200" : "50"}
+      data-aos-duration={starred ? "50" + +index * 1 : "50"}
       className={className}
       style={{backgroundColor: colors[colorName][strength]}}>
       <span>{name}</span>
