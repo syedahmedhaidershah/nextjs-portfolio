@@ -144,8 +144,14 @@
     ],
     "projects": [
         {
-            "title": "Dutch State Exams - Remote Assessment SaaS",
-            "description": "A remote assessment and proctoring solution, built for educational institutions and organizations. This was used in Netherlands for State examinations for upto K-12 during Covid-19. The product was later acquired by a Dutch VC. Code reviews and collaboration with G-Workplace enhanced the product greatly. We maintaned high fault tolerance and resilience to provide a seamless examination experience for College students.",
+            "title": "Dutch State-Exams Remote Assessment & Proctoring",
+            "type": "SaaS Platform and Services",
+            "description": [
+                "A SaaS Remote Assessment platform, used for K-12 State examination during Covid-19 in Netherlands.",
+                "Raised USD 500,000 in 2020.",
+                "G-Workplace collaborated for enhnacements, Testing.",
+                "High Fault tolerance, Remote Proctoring and Disaster recovery was maintained for hundreds of students."
+            ],
             "image": "images/digitest.nl.jpeg",
             "tag": [
                 "All",
@@ -160,8 +166,13 @@
             "duration": "2019-2021"
         },
         {
-            "title": "European Football Community - Super-App & IoT",
-            "description": "A super app and fan-engagement platform for the largest football Community in Europe, went live during FIFA 2022. The teams had content creators distributed across the globe pushing tailor made content to 1.5M+ and 50,000 users daily. The IoT & Data engineering department also produced a real-time data analytics platform for the teams to monitor player performance and health. The app was platform was distributed accross 25 microservices on AWS & GCP",
+            "title": "Largest EU Football Community - Super-App & IoT",
+            "description": [
+                "A Fan-Engagement Super App for the largest football Community in Europe.",
+                "Tailor made content was pushed to 50,000 Active Concurrent and 1.5M+ users daily during FIFA 2022.",
+                "Sensors and Analytics Products are available online for monitoring player performance.",
+                "The app was platform was distributed accross 25 microservices on AWS & GCP."
+            ],
             "image": "images/433.jpeg",
             "tag": [
                 "All",
@@ -177,8 +188,12 @@
             "duration": "2021-2023"
         },
         {
-            "title": "Coffee & Ventures giant - Sites & Cloud Infrastructure",
-            "description": "Solutions, Deployments and Infrastructure for all sites, environments and short-lived ventures of a Global Coffee giant with 500M+ Daily Active users and 6.5M+ Spike concurrent users. The infrastucture was spread accross Kubernetes clusters using Next.js Applicaitons and custom Images. The search & indexing solutions were an Inhouse product extended from Open-source technologies allowing full-text search across 1000s of products & blogs in milliseconds.",
+            "title": "Huge Coffee & Ventures giant - Sites & Cloud Infrastructure",
+            "description": [
+                "Solutions and Infrastructure for sites/ventures of a Global Coffee giant with 500M+ Daily Active users and 6.5M+ Active concurrent users.",
+                "Infrastructure was spread across multi-region Kubernetes clusters.",
+                "Used Open-source technologies allowing full-text search across 1000s of products & blogs in milliseconds."
+            ],
             "image": "images/starbucks.jpeg",
             "tag": [
                 "All",
@@ -186,7 +201,51 @@
             ],
             "gitUrl": "https://github.com/syedahmedhaidershah/",
             "previewUrl": "/",
-            "region": "United States",
+            "region": "Seattle, United States",
+            "pilotYear": "-",
+            "launchYear": "2024",
+            "duration": "2023-2024"
+        },
+        {
+            "title": "Computer Vision Enabled - Video Intelligence Platform",
+            "description": [
+                "Enhances productivity by identifying patterns and increased energy hours of Workforce.",
+                "Integrations with 3rd Party systems and APIs for data enrichment and cleaning.",
+                "Irregularity detection for field & instruments saving millions of customers machinery.",
+                "Quality Control & Safety for Employees and workforce."
+            ],
+            "image": "images/vidan.jpeg",
+            "tag": [
+                "All",
+                "Cloud",
+                "Data",
+                "Web"
+            ],
+            "gitUrl": "https://github.com/syedahmedhaidershah/",
+            "previewUrl": "/",
+            "region": "Texas, United States",
+            "pilotYear": "-",
+            "launchYear": "2022",
+            "duration": "2021-2022"
+        },
+        {
+            "title": "Public Blogs and Platforms for Pioneer in Personal Computing OS from 80s",
+            "description": [
+                "Maintained infrastructure and solutions for a pioneer in Personal Computing OS from 80s.",
+                "Highly available and scalable infrastructure for 1000s of daily users.",
+                "Setup CI/CD pipelines and Automations",
+                "Engaged in DevOps, Archtiecture and SysAdmin tasks for ensuring high availability and performance of systems."
+            ],
+            "image": "images/microsoft.jpeg",
+            "tag": [
+                "All",
+                "Cloud",
+                "Data",
+                "Web"
+            ],
+            "gitUrl": "https://github.com/syedahmedhaidershah/",
+            "previewUrl": "/",
+            "region": "Washington, United States",
             "pilotYear": "-",
             "launchYear": "2024",
             "duration": "2023-2024"
@@ -992,6 +1051,7 @@
         "certification": [
             {
                 "image": "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+                "imagePadding": true,
                 "name": "Azure Bicep & DevOps for Infra as Code: Beginner to Ninja",
                 "organization": "Udemy",
                 "issueDate": "Aug 2023",

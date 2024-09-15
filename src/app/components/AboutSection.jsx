@@ -23,12 +23,12 @@ const TAB_DATA = [
                 <h1
                   data-aos="fade-up"
                   data-aos-delay="0"
-                  data-aos-duration="100"
+                  data-aos-duration="60"
                   className="tablet:m-1 mt-5 py-3 mobile:text-2xl tablet:text-2xl laptop:text-2xl desktop:text-2xl text-bold">{key}</h1>
                 <div
                   data-aos="fade-up-left"
                   data-aos-delay="0"
-                  data-aos-duration="100"
+                  data-aos-duration="60"
                   className="mt-0 tablet:mx-1 grid tablet:grid-cols-2 laptop:grid-cols-6 desktop:grid-cols-8 gap-4 grid-cols-2">
                   {
                     skills
@@ -46,7 +46,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <div className="list-disc pl-2">
+      <div className="list-disc pl-0">
         {
           data.resume.education.map((degree, index) => {
             return <Link
@@ -57,10 +57,10 @@ const TAB_DATA = [
                 alt={`${degree.degree} ${degree.major}`}
                 injectContent={
                   <div className="p-3 flex flex-col flex-initial justify-center align-middle w-12/12 laptop:w-8/12 laptop:pl-10 rounded-2xltext-black text-black">
-                    <div class="text-2xl mob:text-xl italic">{degree.degree}</div>
-                    <div class="text-2xl mob:text-xl font-bold">{degree.major}</div>
-                    <div class="text-lg mob:text-base">{degree.institute}</div>
-                    <div class="text-lg mob:text-base">{degree.duration}</div>
+                    <div className="text-2xl mob:text-xl italic">{degree.degree}</div>
+                    <div className="text-2xl mob:text-xl font-bold">{degree.major}</div>
+                    <div className="text-lg mob:text-base">{degree.institute}</div>
+                    <div className="text-lg mob:text-base">{degree.duration}</div>
                   </div>
                 } />
             </Link>
@@ -73,22 +73,22 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <div className="list-disc pl-2">
+      <div className="list-disc pl-0">
         {
           data.resume.certification.map((certificate, index) => {
             return <Link
               key={"certificate-" + index}
               href={certificate.link} target="_blank">
               <HorizontalImageTextCard
-                options={{ imageMargin: true }}
+                options={{ ...certificate }}
                 image={certificate.image}
                 alt={`${certificate.name}`}
                 injectContent={
                   <div className="p-3 flex flex-col flex-initial justify-center align-middle w-12/12 laptop:w-8/12 laptop:pl-10 rounded-2xltext-black text-black">
-                    <div class="text-4xl mob:text-2xl">{certificate.name}</div>
-                    <div class="text-lg mob:text-base">{certificate.organization}</div>
-                    <div class="text-lg mob:text-base">{certificate.issueDate}</div>
-                    <div class="text-xs mob:text-sm">{certificate.credentialID}</div>
+                    <div className="text-4xl mob:text-2xl">{certificate.name}</div>
+                    <div className="text-lg mob:text-base">{certificate.organization}</div>
+                    <div className="text-lg mob:text-base">{certificate.issueDate}</div>
+                    <div className="text-xs mob:text-sm">{certificate.credentialID}</div>
                   </div>
                 } />
             </Link>

@@ -30,7 +30,7 @@ const SkillChip = ({ index, name, color, starred = false }) => {
     <div
       data-aos={starred ? "fade-up-right" : "fade-up-left"}
       data-aos-delay="0"
-      data-aos-duration={starred ? "50" + +index * 1 : "50"}
+      data-aos-duration={starred ? "50" + +index * 2 : "1"}
       className={className}
       style={{backgroundColor: colors[colorName][strength]}}>
       <span>{name}</span>

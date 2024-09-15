@@ -7,7 +7,7 @@ import Image from "next/image";
 const HorizontalImageTextCard = ({ image, alt, injectContent, options = {} }) => {
   const { theme } = useTheme();
   const {
-    imageMargin = false,
+    imagePadding = false,
   } = options;
 
   return (
@@ -18,13 +18,14 @@ const HorizontalImageTextCard = ({ image, alt, injectContent, options = {} }) =>
         className="rounded-2xl overflow-hidden bg-white flex flex-1 flex-col laptop:flex-row my-2 mb-6 p-0">
         <div className="p-0 flex-initial w-12/12 laptop:w-4/12 text-black">
             <Image
-                className={imageMargin ? 'm-3' : 'm-0'}
+                className={imagePadding ? 'p-4' : 'm-0'}
                 src={image}
                 alt={alt}
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '100%', height: 'auto' }} />
+                style={{ width: '100%', height: 'auto' }}
+                priority />
         </div>
         {injectContent}
     </div>

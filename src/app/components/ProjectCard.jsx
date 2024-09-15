@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ image, title, description, gitUrl, previewUrl, region, pilotYear, launchYear, duration }) => {
   return (
-    <div>
+    <div className="border border-[#33353F] rounded-lg min-h-full">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden bg-white text-black"
         style={{ background: `url(${image})`, backgroundSize: "cover" }}
@@ -27,9 +27,17 @@ const ProjectCard = ({ image, title, description, gitUrl, previewUrl, region, pi
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
-        {region &&  (<div className="text-lg mt-2 font-semibold text-right">{region}</div>)}
-        {launchYear &&  (<div className="text-lg font-semibold text-right">Launch Year: {launchYear}</div>)}
+        <ul className="text-[#ADB7BE] list-disc p-3">{(
+          Array.isArray(description)
+            ? description.map(descriptionLine => <li>{descriptionLine}</li>)
+            : description
+        )}</ul>
+      </div>
+      <div className="p-3">
+        {region && (<div className="text-base mt-2 font-semibold text-right">{region}</div>)}
+        {launchYear && (<div className="text-base text-right mb-3">
+          <span className="font-semibold">{launchYear}</span>
+        </div>)}
       </div>
     </div>
   );
