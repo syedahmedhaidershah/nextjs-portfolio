@@ -12,8 +12,13 @@
             "Full-Stack Engineer",
             "Web Engineer",
             "Backend Engineer",
-            "Cloud Engineer & Architect",
-            "Software Achitect Systems Engineer",
+            "Cloud Engineer",
+            "Cloud Architect",
+            "Software Engineer",
+            "Software Architect",
+            "Systems Engineer",
+            "Infrastructure Architect",
+            "Solution Architect",
             "DevOps",
             "Cloud Architecture",
             "Microservices",
@@ -101,7 +106,7 @@
             "a Systems Engineer",
             "a Cloud Architect",
             "a Solutions Architect",
-            "a Infras Architect"
+            "an Infra Architect"
         ]
     },
     "showCursor": true,
@@ -930,13 +935,13 @@
     "resumeLink": "https://1drv.ms/b/s!AipqTeTaG-2agvILOWL1Wza3bD-i4A?e=AA99UQ",
     "achievements": [
         {
-            "metric": "Shipped Products & Solutions",
+            "metric": "Shipped Products/Solutions",
             "value": "120",
             "prefix": "$",
             "postfix": "M+"
         },
         {
-            "metric": "Years of Experience",
+            "metric": "Experience - Years",
             "value": "9",
             "prefix": "",
             "postfix": "+"
@@ -948,7 +953,7 @@
             "postfix": "M+"
         },
         {
-            "metric": "Apps' users concurrent",
+            "metric": "Apps' Concurrent Users",
             "value": "6",
             "prefix": "",
             "postfix": "M+"

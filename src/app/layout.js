@@ -5,21 +5,32 @@ import { AOSInit } from './components/Aos';
 
 const inter = Inter({ subsets: ['latin'] })
 
+const useClass = [
+  inter.className,
+  'min-w-full',
+  'overflow-x-hidden',
+].join(' ');
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: '1.0',
+}
+ 
+
 export const metadata = {
   title: data.name,
   robots: "index,follow",
   description: data.metadata.description,
   keywords: data.metadata.keywords.join(","),
   author: data.name,
-  viewport: "width=device-width, initial-scale=1.0",
   charset: "UTF-8"
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <body className={useClass}>{children}</body>
       <AOSInit />
-      <body className={inter.className}>{children}</body>
     </html>
   )
 }

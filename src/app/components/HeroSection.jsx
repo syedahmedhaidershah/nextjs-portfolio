@@ -17,28 +17,30 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-7xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+            <span className="px-12 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello 👋, I&apos;m{" "}
             </span>
             <br></br>
-            <TypeAnimation
-              sequence={[
-                ...data.hero.iamList
-                .map(heroText => ([heroText, 1000]))
-                .flat(),
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            <div className="px-0 laptop:px-12">
+              <TypeAnimation
+                sequence={[
+                  ...data.hero.iamList
+                    .map(heroText => ([heroText, 1000]))
+                    .flat(),
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </div>
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-xl mb-6 lg:text-2xl">
+          <p className="px-12 text-[#ADB7BE] text-base sm:text-xl mb-6 lg:text-2xl">
             {data.headerTaglineFour}
           </p>
-          <p className="text-[#ADB7BE] text-base sm:text-base mb-6 lg:text-lg">
+          <p className="px-12 text-[#ADB7BE] text-base sm:text-base mb-6 lg:text-lg">
             {data.headerTaglineThree}
           </p>
-          <div>
+          <div className="px-12">
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mb-2 mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
