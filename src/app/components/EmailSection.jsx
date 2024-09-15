@@ -5,6 +5,7 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import data from "../assets/data/portfolio.json";
+import { StringLibrary } from "../libs/string.lib";
 
 const EmailSection = () => {
   const [formEnabled, setEnableForm] = useState(false);
@@ -77,7 +78,9 @@ const EmailSection = () => {
           I am available at the email address <Link href={`mailto:${email.link}`} className="text-primary-500">{email.link}</Link>
         </p>
         <p className="text-[#ADB7BE] my-4 mt-10 max-w-md">
-          I can also be reached out at <Link href={`tel:${phone.link}`} className="text-primary-500">{phone.link}</Link>
+          I can also be reached out at <Link href={`tel:${phone.link}`} className="text-primary-500">{
+            StringLibrary.phoneNumberToFormattedString(phone.link)
+          }</Link>
         </p>
       </div>
       {formEnabled && (
