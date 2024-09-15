@@ -33,7 +33,7 @@ const TAB_DATA = [
                   {
                     skills
                       .map((skill, skillIndex) => (
-                        <SkillChip key={key+"-"+skillIndex} index={skillIndex} name={skill.name} color={skill.color} starred={skill.starred} />))
+                        <SkillChip key={key + "-" + skillIndex} index={skillIndex} name={skill.name} color={skill.color} starred={skill.starred} />))
                   }
                 </div>
               </div>
@@ -130,7 +130,10 @@ const AboutSection = () => {
             data-aos-delay="50"
             className="text-base lg:text-xl md:text-lg mb-10">
             {data.aboutpara.map((paraLine, index) => {
-              return <span key={'about-paraline-' + index}>{paraLine}<br /><br /></span>;
+              return <span
+                data-aos="fade-up-left"
+                data-aos-delay="100"
+                key={'about-paraline-' + index}>{paraLine}<br /><br /></span>;
             })}
           </p>
           <div
