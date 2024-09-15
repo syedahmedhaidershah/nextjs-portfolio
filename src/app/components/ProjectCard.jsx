@@ -29,7 +29,7 @@ const ProjectCard = ({ image, title, description, gitUrl, previewUrl, region, pi
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <ul className="text-[#ADB7BE] list-disc p-3">{(
           Array.isArray(description)
-            ? description.map(descriptionLine => <li>{descriptionLine}</li>)
+            ? description.map((descriptionLine, dIndex) => <li key={title+"-description-"+dIndex}>{descriptionLine}</li>)
             : description
         )}</ul>
       </div>
