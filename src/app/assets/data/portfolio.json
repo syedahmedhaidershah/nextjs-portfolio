@@ -1050,10 +1050,10 @@
         ],
         "certification": [
             {
-                "image": "https://nasba.org/wp-content/themes/nasba/img/nasba_logo.jpg",
+                "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
                 "imagePadding": true,
                 "name": "Amazon Web Services: Data Analytics",
-                "organization": "NASBA",
+                "organization": "Linkedin (NASBA)",
                 "issueDate": "Sep 2024",
                 "credentialID": "c8af594118956070f51da01800a20e30207bf807b8e4ad450483910e46f588af",
                 "link": "https://www.linkedin.com/learning/certificates/c8af594118956070f51da01800a20e30207bf807b8e4ad450483910e46f588af?trk=share_certificate"

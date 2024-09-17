@@ -16,7 +16,7 @@ const HorizontalImageTextCard = ({ image, alt, injectContent, options = {} }) =>
         data-aos-delay="50"
         data-aos-duration="100"
         className="rounded-2xl overflow-hidden bg-white flex flex-1 flex-col laptop:flex-row my-2 mb-6 p-0">
-        <div className="p-0 flex-initial w-12/12 laptop:w-4/12 text-black">
+        <div className="p-0 flex-initial items-center flex w-12/12 laptop:w-4/12 text-black">
             <Image
                 className={imagePadding ? 'p-4' : 'm-0'}
                 src={image}
