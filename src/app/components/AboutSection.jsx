@@ -88,7 +88,8 @@ const TAB_DATA = [
                     <div className="text-4xl mob:text-2xl">{certificate.name}</div>
                     <div className="text-lg mob:text-base">{certificate.organization}</div>
                     <div className="text-lg mob:text-base">{certificate.issueDate}</div>
-                    <div className="text-xs mob:text-sm">{certificate.credentialID}</div>
+                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-400"></hr>
+                    <div className="text-xs text-gray-500 mob:text-sm break-all font-semibold italic">{certificate.credentialID}</div>
                   </div>
                 } />
             </Link>

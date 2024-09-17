@@ -1057,6 +1057,15 @@
                 "issueDate": "Aug 2023",
                 "credentialID": "UC-2edd070a-1720-4268-91e0-2446db0c62a9",
                 "link": "https://www.udemy.com/certificate/UC-2edd070a-1720-4268-91e0-2446db0c62a9/"
+            },
+            {
+                "image": "https://nasba.org/wp-content/themes/nasba/img/nasba_logo.jpg",
+                "imagePadding": true,
+                "name": "Amazon Web Services: Data Analytics",
+                "organization": "NASBA",
+                "issueDate": "Sep 2024",
+                "credentialID": "c8af594118956070f51da01800a20e30207bf807b8e4ad450483910e46f588af",
+                "link": "https://www.linkedin.com/learning/certificates/c8af594118956070f51da01800a20e30207bf807b8e4ad450483910e46f588af?trk=share_certificate"
             }
         ],
         "languages": [
