@@ -9,7 +9,7 @@ import { StringLibrary } from "../libs/string.lib";
 import { api } from '../api/client';
 
 const EmailSection = () => {
-  const [formEnabled, setEnableForm] = useState(true);
+  const [formEnabled, setEnableForm] = useState(false);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
