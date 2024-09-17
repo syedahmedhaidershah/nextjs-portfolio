@@ -6,9 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import data from "../assets/data/portfolio.json";
 import { StringLibrary } from "../libs/string.lib";
+import { api } from '../api/client';
 
 const EmailSection = () => {
-  const [formEnabled, setEnableForm] = useState(false);
+  const [formEnabled, setEnableForm] = useState(true);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -19,22 +20,17 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    const endpoint = "/send-email";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    const { data: resData } = await api.post(
+      endpoint,
+      JSONdata,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
 
     if (response.status === 200) {
       console.log("Message sent.");
