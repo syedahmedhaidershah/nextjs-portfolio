@@ -25,7 +25,7 @@ export default function Home() {
       {/* Browser event handlers */}
       <GoogleAnalytics gaId={data.GAID} />
       <Navbar />
-      <div className="container mt-60 laptop:mt-20 mx-auto py-4">
+      <div className="container mt-32 laptop:mt-20 mx-auto py-4">
         <HeroSection />
       </div>
       <div className="container mt-0 mx-auto px-12 py-0">
