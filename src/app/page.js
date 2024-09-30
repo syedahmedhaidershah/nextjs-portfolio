@@ -31,7 +31,11 @@ export default function Home() {
       <div className="container mt-0 mx-auto px-12 py-0">
         <AchievementsSection />
         <AboutSection />
+      </div>
+      <div className="container mt-0 mx-auto px-5 md:px-12 py-0">
         <ProjectsSection />
+      </div>
+      <div className="container mt-0 mx-auto px-12 py-0">
         <EmailSection />
       </div>
       <Footer />

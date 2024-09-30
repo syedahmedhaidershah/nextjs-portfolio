@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ image, title, description, gitUrl, previewUrl, region, pilotYear, launchYear, duration }) => {
   return (
-    <div className="border border-[#33353F] rounded-lg min-h-full">
+    <div className="border border-[#63656F] rounded-lg min-h-full focus:bg-slate-50 transition:bg">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden bg-white text-black"
         style={{ background: `url(${image})`, backgroundSize: "cover" }}

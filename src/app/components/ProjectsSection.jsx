@@ -52,7 +52,7 @@ const ProjectsSection = () => {
       <div
         data-aos="fade-up"
         data-aos-delay="50"
-        className="text-white flex flex-row justify-center items-center gap-2 py-6">
+        className="text-white flex flex-row justify-start md:justify-center items-center gap-2 py-6 overflow-x-auto md:overflow-x-hidden">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
