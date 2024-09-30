@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const useClass = [
   inter.className,
-  'min-w-full',
+  '!w-[100vw]',
   'overflow-x-hidden',
 ].join(' ');
 
@@ -15,7 +15,7 @@ export const viewport = {
   width: 'device-width',
   initialScale: '1.0',
 }
- 
+
 
 export const metadata = {
   title: data.name,
@@ -29,6 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://syedahmedhaidershah.com/" />
+      </head>
       <body className={useClass}>{children}</body>
       <AOSInit />
     </html>

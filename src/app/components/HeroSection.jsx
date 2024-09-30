@@ -48,29 +48,38 @@ const HeroSection = () => {
               Get in Touch
             </Link>
             <Link
-              href={data.resumeLink}
-              target="_blank"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mb-2 mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                View Resume
-              </span>
-            </Link>
-            <Link
               href={data.socials.find(social => social.title.toLowerCase() === 'github').link}
               target="_blank"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mb-8 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mb-2 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Github Profile
+              </span>
+            </Link>
+            <Link
+              href={data.resumeLink}
+              target="_blank"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mb-8 mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Check out Resume
               </span>
             </Link>
           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            rotate: 360
+          }}
+          transition={{
+            duration: 2,
+            type: 'spring',
+            stiffness: 250,
+            damping: 10
+          }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">

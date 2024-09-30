@@ -20,11 +20,11 @@ const TAB_DATA = [
               const skills = data.displaySkillsCategorized[key];
 
               return <div key={"skill-heading" + categoryIndex}>
-                <h1
+                <h2
                   data-aos="fade-up"
                   data-aos-delay="0"
                   data-aos-duration="60"
-                  className="tablet:m-1 mt-5 py-3 mobile:text-2xl tablet:text-2xl laptop:text-2xl desktop:text-2xl text-bold">{key}</h1>
+                  className="tablet:m-1 mt-5 py-3 mobile:text-2xl tablet:text-2xl laptop:text-2xl desktop:text-2xl text-bold">{key}</h2>
                 <div
                   data-aos="fade-up-left"
                   data-aos-delay="0"
