@@ -89,17 +89,19 @@ jobs:
       matrix:
         node-version: ['22.x']
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Download Build artifacts
         uses: actions/download-artifact@v4
         with:
           name: out
           path: out/
-
       - name: Commit to same branch in dist directory
         run: |
           cp -r out dist
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          rm -rf out
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git add dist
           git commit -m "Deployed to dist directory"
           git push
