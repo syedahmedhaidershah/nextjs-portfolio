@@ -1,4 +1,4 @@
-name: 'Develop deploy app'
+name: "Develop deploy app"
 
 on:
   push:
@@ -11,13 +11,12 @@ on:
 permissions:
   contents: read
 
-
 jobs:
   CI:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['22.x']
+        node-version: ["22.x"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,11 +48,11 @@ jobs:
           chmod +x ./.github/workflows/scripts/upload-all.sh
           npm i -g yarn
           yarn install
-        
+
       - name: build project
         continue-on-error: false
         run: npm run build
-        
+
       - name: Enable error page
         continue-on-error: true
         run: mkdir -p out && cp public/error.html out/error.html
@@ -61,7 +60,7 @@ jobs:
       - name: CI & Updates
         env:
           S3_KEY: ${{ secrets.S3_KEY }}
-        continue-on-error: false     
+        continue-on-error: false
         run: |
           /bin/bash ./.github/workflows/scripts/upload-all.sh
 
@@ -72,7 +71,7 @@ jobs:
           if [[ -z "$EXISTS" ]]; then
             exit 1;
           fi
-      
+
       - name: Uploading build artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -87,7 +86,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['22.x']
+        node-version: ["22.x"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -128,4 +127,3 @@ jobs:
       #     ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SSH_PATH"
       #     rsync -avz --delete -e 'ssh -o StrictHostKeyChecking=no' out/ $SSH_USER@$SSH_HOST:$SSH_PATH/
       #     echo deployed
-
