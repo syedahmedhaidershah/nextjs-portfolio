@@ -29,11 +29,19 @@ const TAB_DATA = [
                   data-aos="fade-up-left"
                   data-aos-delay="0"
                   data-aos-duration="60"
-                  className="mt-0 tablet:mx-1 grid tablet:grid-cols-2 laptop:grid-cols-6 desktop:grid-cols-8 gap-4 grid-cols-2">
+                  className="mt-0 tablet:mx-1 grid tablet:grid-cols-2 laptop:grid-cols-5 desktop:grid-cols-7 gap-4 grid-cols-2">
                   {
                     skills
                       .map((skill, skillIndex) => (
-                        <SkillChip key={key + "-" + skillIndex} index={skillIndex} name={skill.name} color={skill.color} starred={skill.starred} />))
+                        <SkillChip
+                          key={key + "-" + skillIndex}
+                          index={skillIndex}
+                          name={skill.name}
+                          color={skill.color}
+                          starred={skill.starred}
+                          icon={skill?.icon}
+                          fill={skill?.fill}
+                          />))
                   }
                 </div>
               </div>

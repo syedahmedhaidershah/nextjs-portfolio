@@ -30,6 +30,25 @@ html, body {
   overflow-x: hidden!important;
 }
 
-* {
-  /* border: 1px dotted white; */
+.gradient-bg {
+  background-image: linear-gradient(to bottom right, var(--from-color), var(--to-color));
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 16px;
+  padding: 4px 8px;
+  background-color: transparent;
+}
+
+.chip img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.chip.starred {
+  border-color: gold;
 }

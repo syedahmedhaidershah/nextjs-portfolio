@@ -30,6 +30,8 @@ export default function Home() {
       </div>
       <div className="container mt-0 mx-auto px-12 py-0">
         <AchievementsSection />
+      </div>
+      <div className="container mt-0 mx-auto px-6 py-0">
         <AboutSection />
       </div>
       <div className="container mt-0 mx-auto px-5 md:px-12 py-0">
