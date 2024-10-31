@@ -97,14 +97,14 @@ jobs:
         with:
           name: out
           path: out/
-      - name: Commit to same branch in dist directory
+      - name: Commit to same branch in docs directory
         run: |
-          cp -r out dist
+          cp -r out docs
           rm -rf out
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add dist
-          git commit -m "Deployed to dist directory"
+          git add docs
+          git commit -m "Deployed to docs directory"
           git push
 
       # - name: Setup SSH configuration
