@@ -3,9 +3,9 @@ name: "Develop deploy app"
 on:
   push:
     branches:
-      - develop
-      - dev
-      - main
+      - develop-detached
+      - dev-detached
+      - main-detached
       - "feat/ci-cd"
 
 permissions:
