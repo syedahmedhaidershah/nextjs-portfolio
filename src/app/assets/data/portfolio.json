@@ -1124,5 +1124,43 @@
             "Docker",
             "Kubernetes"
         ]
-    }
+    },
+    "workHistory": [
+        {
+            "position": "Software Engineer - Systems & Backend",
+            "company": "10Up Inc.",
+            "duration": "Aug 2023 - Present",
+            "description": "Engineering Node.js Microservices supporting 500M+ DAU and up to 6M concurrent users. Architecting cloud solutions and managing CloudOps/DevOps tasks, including Kubernetes provisioning and backend deployments for enhanced visibility and fault tolerance."
+        },
+        {
+            "position": "Lead Software Engineer - Backend",
+            "company": "CloudPrimero (433 Football x CP)",
+            "duration": "May 2022 - Aug 2023",
+            "description": "Led backend and cloud architecture for 433 Home of Football Super App, scaling infrastructure for 1.5M+ daily users and 50k concurrent users. Managed a team of 11 engineers across 6 squads, optimized API performance by up to 50x, and utilized AWS tools for enhanced visibility."
+        },
+        {
+            "position": "Team Lead Software Engineer, Architect",
+            "company": "Liquid Technologies",
+            "duration": "Sep 2021 - May 2022",
+            "description": "Engineered solutions and managed a team of 5 engineers. Designed architecture and infrastructure solutions while improving strategies and processes, and collaborated on DevOps and CI/CD efforts."
+        },
+        {
+            "position": "Lead Software Engineer, Architect",
+            "company": "Digitest.nl",
+            "duration": "Sep 2019 - Sep 2021",
+            "description": "Served as Lead Engineer and Solution Architect, heading a team of 25+. Developed high-performance APIs with sub-millisecond response times and improved response times by up to 35x. Automated CI/CD pipelines and implemented a refined UI/UX."
+        },
+        {
+            "position": "Senior Software Engineer",
+            "company": "Pulsate Technologies",
+            "duration": "May 2018 - Sep 2019",
+            "description": "Engineered scalable solutions for clients, supporting thousands of users. Developed an automated device discovery system, reducing deployment time from 2 hours to 5 minutes."
+        },
+        {
+            "position": "Senior Software Engineer - IoT & Cloud",
+            "company": "Integraject",
+            "duration": "Jul 2015 - May 2018",
+            "description": "Built full-stack web solutions for multiple clients in IoT and cloud domains, contributing to scalable software engineering efforts."
+        }
+    ]
 }
