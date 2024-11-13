@@ -16,6 +16,10 @@ const navLinks = [
     path: "#about",
   },
   {
+    title: "Work",
+    path: "#work-history",
+  },
+  {
     title: "Projects",
     path: "#projects",
   },
@@ -74,7 +78,9 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink href={link.path} title={link.title} postRouteHandlers={[
+                  [setNavbarOpen, false]
+                ]} />
               </li>
             ))}
           </ul>
