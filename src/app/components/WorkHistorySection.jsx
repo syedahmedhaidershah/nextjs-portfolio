@@ -14,7 +14,7 @@ const WorkHistorySection = () => {
                     <div className="mt-8 relative">
                         {data.workHistory.map((job, index) => (
                             <div key={"job-" + index} className={`relative z-2 mb-8 flex flex-col sm:flex-row ${index % 2 === 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'} items-center`}>
-                                <div className="w-full sm:w-1/2 p-4 bg-gray-800 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                                <div className="w-full sm:w-1/2 p-4 bg-gradient-to-br from-gray-800 to-violet-950 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                                     <h3 className="text-2xl font-bold">{job.position}</h3>
                                     <p className="text-lg text-gray-400">{job.company}</p>
                                     <p className="text-base text-gray-500">{job.duration}</p>
