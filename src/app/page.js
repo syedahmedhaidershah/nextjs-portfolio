@@ -6,10 +6,11 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import WorkHistorySection from "./components/WorkHistorySection";
+import LifeSection from "./components/LifeSection";
 import Head from "next/head";
 import data from './assets/data/portfolio.json';
-import { GoogleAnalytics } from '@next/third-parties/google'
-
+import { GoogleAnalytics } from '@next/third-parties/google';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,6 +35,12 @@ export default function Home() {
       </div>
       <div className="container mt-0 mx-auto px-6 py-0">
         <AboutSection />
+      </div>
+      <div className="container mt-0 mx-auto px-6 py-0">
+        <LifeSection />
+      </div>
+      <div className="container mt-0 mx-auto px-6 py-0">
+        <Link href="/life" className="text-blue-500 underline">Visit Life Page</Link>
       </div>
       <div className="container mt-0 mx-auto px-6 py-0">
         <WorkHistorySection />

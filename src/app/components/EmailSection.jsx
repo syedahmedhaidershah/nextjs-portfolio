@@ -8,7 +8,9 @@ import data from "../assets/data/portfolio.json";
 import { StringLibrary } from "../libs/string.lib";
 import { api } from '../api/client';
 
-const EmailSection = () => {
+const EmailSection = (props) => {
+  const { pageId = 'contact' } = props;
+
   const [formEnabled, setEnableForm] = useState(false);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
@@ -44,11 +46,12 @@ const EmailSection = () => {
     blog,
     email,
     phone,
+    phone2,
   ] = data.socials;
 
   return (
     <section
-      id="contact"
+      id={pageId}
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
@@ -58,7 +61,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently open to new opportunities, my inbox is always
+          I&apos;m currently not open to new opportunities, though my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
@@ -73,9 +76,14 @@ const EmailSection = () => {
         <p className="text-[#ADB7BE] my-4 mt-10 max-w-md">
           I am available at the email address <Link href={`mailto:${email.link}`} className="text-primary-500">{email.link}</Link>
         </p>
-        <p className="text-[#ADB7BE] my-4 mt-10 max-w-md">
+        <p className="text-[#ADB7BE] my-4 mt-10 mb-2 max-w-md">
           I can also be reached out at <Link href={`tel:${phone.link}`} className="text-primary-500">{
             StringLibrary.phoneNumberToFormattedString(phone.link)
+          }</Link>
+        </p>
+        <p className="text-[#ADB7BE] my-4 mt-2 max-w-md">
+          Or at <Link href={`tel:${phone2.link}`} className="text-primary-500">{
+            StringLibrary.phoneNumberToFormattedString(phone2.link)
           }</Link>
         </p>
       </div>

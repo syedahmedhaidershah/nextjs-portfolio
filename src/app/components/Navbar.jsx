@@ -27,6 +27,10 @@ const navLinks = [
     title: "Let's Connect",
     path: "#contact",
   },
+  {
+    title: "Life",
+    path: "/life",
+  },
 ];
 
 const Navbar = () => {
