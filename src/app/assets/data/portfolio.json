@@ -810,9 +810,16 @@
                 "starred": true
             },
             {
-                "name": "Python",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-                "color": "bg-lime-600"
+                "name": "Scala",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg",
+                "color": "bg-lime-600",
+                "starred": false
+            },
+            {
+                "name": "Java",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+                "color": "bg-lime-600",
+                "starred": false
             },
             {
                 "name": "React",
@@ -829,6 +836,11 @@
                 "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg?color=white",
                 "color": "bg-lime-600",
                 "fill": "#ffffff"
+            },
+            {
+                "name": "Python",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                "color": "bg-lime-600"
             }
         ],
         "Databases": [
@@ -865,6 +877,11 @@
             {
                 "name": "DynamoDB",
                 "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg",
+                "color": "bg-orange-600"
+            },
+            {
+                "name": "ScyllaDB",
+                "icon": "https://avatars.githubusercontent.com/u/14364730?s=200&v=4",
                 "color": "bg-orange-600"
             }
         ],
@@ -1023,10 +1040,11 @@
         ]
     },
     "aboutpara": [
-        "I am an experienced Software Solutions, Systems and Cloud Engineer.",
+        "Professionally, I am an experienced Software Solutions, Systems and Cloud Engineer.",
         "My expertise lies in Full-stack & Cloud Engineering. The areas I excel highly in, are Product Engineering, Distributed Computing, Microservices, Scalability, Reliability, DevOps, Cloud-Native Apps and IaC.",
         "I have scaled applications to support 500M+ users. I have led teams with 6+ squads / pods and 25+ members, while shipping quality solutions in EdTech, Enterntainment, HealthCare, ERP and Fan-Engagement industries",
-        "I fuel products - I am generally passionate about delivering high-quality solutions."
+        "I fuel products - I am generally passionate about delivering high-quality solutions.",
+        "Now ABOUT ME, I am Computer (Systems) Engineering grad. I am into Motorsports, slow smoking & BBQing Lambs, Mutton, Beef. I am a father, a husband. Other than that IOT, Electronics, Cloud and Systems integration really riles me up."
     ],
     "resumeLink": "https://1drv.ms/b/s!AipqTeTaG-2agvILOWL1Wza3bD-i4A?e=AA99UQ",
     "achievements": [
@@ -1087,6 +1105,15 @@
         ],
         "certification": [
             {
+                "image": "https://media.licdn.com/dms/image/v2/C560BAQG879H8iLLv5w/company-logo_100_100/company-logo_100_100/0/1630590313750?e=1750291200&v=beta&t=lv7ohz1L-vP1OIM0WAPpDBZSIypdd5VamO6qBKlVSHk",
+                "imagePadding": true,
+                "name": "Scala Essential Training",
+                "organization": "Linkedin (NASBA), RockTheJVM",
+                "issueDate": "March 2025",
+                "credentialID": "9a237a9595eef96600142fb61ed261d1a9a009928647a2940cf6e8b6f98dfa71",
+                "link": "https://www.linkedin.com/learning/certificates/9a237a9595eef96600142fb61ed261d1a9a009928647a2940cf6e8b6f98dfa71?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B20xmmxTmThKM4Jywg62Sug%3D%3D&accountId=110979060&u=110979060&success=true&authUUID=ZgkySSwtQHS%2FXbv09RaSIQ%3D%3D"
+            },
+            {
                 "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
                 "imagePadding": true,
                 "name": "Amazon Web Services: Data Analytics",
@@ -1107,6 +1134,8 @@
         ],
         "languages": [
             "JavaScript",
+            "TypeScript",
+            "Scala",
             "HTML5",
             "CSS",
             "Python",
@@ -1114,7 +1143,6 @@
         ],
         "frameworks": [
             "React",
-            "TypeScript",
             "Node.js"
         ],
         "others": [
@@ -1127,9 +1155,15 @@
     },
     "workHistory": [
         {
+            "position": "Senior Software Engineer",
+            "company": "Agoda Services Co. Ltd.",
+            "duration": "March 2023 - Present",
+            "description": "Engineering Microservices and APIs to make the Agoda Flight Platform great."
+        },
+        {
             "position": "Software Engineer - Systems & Backend",
             "company": "10Up Inc.",
-            "duration": "Aug 2023 - Present",
+            "duration": "Aug 2023 - Aug 2024",
             "description": "Engineering Node.js Microservices supporting 500M+ DAU and up to 6M concurrent users. Architecting cloud solutions and managing CloudOps/DevOps tasks, including Kubernetes provisioning and backend deployments for enhanced visibility and fault tolerance."
         },
         {
