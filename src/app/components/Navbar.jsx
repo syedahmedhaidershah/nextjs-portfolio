@@ -28,8 +28,8 @@ const navLinks = [
     path: "#contact",
   },
   {
-    title: "Life",
-    path: "/life",
+    title: "Blog",
+    path: "/blog",
   },
 ];
 

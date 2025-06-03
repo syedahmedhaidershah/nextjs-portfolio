@@ -6,7 +6,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import WorkHistorySection from "./components/WorkHistorySection";
-import LifeSection from "./components/LifeSection";
+import BlogSection from "./components/BlogSection";
 import Head from "next/head";
 import data from './assets/data/portfolio.json';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -37,10 +37,10 @@ export default function Home() {
         <AboutSection />
       </div>
       <div className="container mt-0 mx-auto px-6 py-0">
-        <LifeSection />
+        <BlogSection />
       </div>
-      <div className="container mt-0 mx-auto px-6 py-0">
-        <Link href="/life" className="text-blue-500 underline">Visit Life Page</Link>
+      <div className="text-center mt-8">
+        <Link href="/blog" className="text-blue-500 underline">Visit Blog Page</Link>
       </div>
       <div className="container mt-0 mx-auto px-6 py-0">
         <WorkHistorySection />
