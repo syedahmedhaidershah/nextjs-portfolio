@@ -27,10 +27,38 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Syed Ahmed Haider",
+    "jobTitle": "Cloud & AI Systems Architect",
+    "url": "https://syedahmedhaidershah.com",
+    "sameAs": [
+      "https://github.com/syedahmedhaidershah",
+      "https://www.linkedin.com/in/syedahmedhaidershah/"
+    ],
+    "knowsAbout": [
+      "Agentic AI",
+      "Autonomous Agents",
+      "Model Context Protocol",
+      "Control Planes",
+      "Distributed Systems",
+      "Cloud Architecture",
+      "Kubernetes",
+      "DevOps",
+      "Rust",
+      "TypeScript"
+    ]
+  };
+
   return (
     <html lang="en">
       <head>
         <link rel="canonical" href="https://syedahmedhaidershah.com/" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className={useClass}>{children}</body>
       <AOSInit />

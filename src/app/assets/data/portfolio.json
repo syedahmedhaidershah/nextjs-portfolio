@@ -5,10 +5,15 @@
     "headerTaglineThree": "Software Engineering | Infra & Solutions Architecture | MEAN | MERN | AWS | DevOps | Automation | Linux Administration | System Engineering & Design",
     "headerTaglineFour": "I am an experienced Full-Stack Software & Cloud Engineer and an Infrastructure Architect. I fuel products.",
     "metadata": {
-        "description": "Ahmed Haider is a seasoned Full-stack, Cloud & Systems Engineer, with expertise in DevOps, microservices, architecture, scalability and software engineering.",
+        "description": "Syed Ahmed Haider is a Cloud & Systems Architect specializing in Agentic AI control planes, autonomous agent orchestration, Model Context Protocol (MCP), distributed systems, and scalable cloud infrastructure.",
         "keywords": [
             "Syed Ahmed Haider",
             "Ahmed Haider",
+            "Agentic AI",
+            "Autonomous Agents",
+            "Model Context Protocol",
+            "MCP",
+            "Control Planes",
             "Full-Stack Engineer",
             "Web Engineer",
             "Backend Engineer",
@@ -98,15 +103,11 @@
     "hero": {
         "iamList": [
             "Ahmed Haider",
-            "a Software Engineer",
-            "a Cloud Engineer",
-            "a Full-Stack Engineer",
-            "a Sofware Architect",
-            "a Product Engineer",
-            "a Systems Engineer",
-            "a Cloud Architect",
-            "a Solutions Architect",
-            "an Infra Architect"
+            "a Software Architect",
+            "a Cloud & Systems Engineer",
+            "a Distributed Systems Architect",
+            "an AI Systems & Tooling Engineer",
+            "an Infrastructure Architect"
         ]
     },
     "showCursor": true,
@@ -150,7 +151,72 @@
     ],
     "projects": [
         {
-            "title": "Dutch State-Exams Remote Assessment & Proctoring",
+            "title": "Foundry",
+            "subtitle": "Autonomous Agentic Coding Control Plane",
+            "type": "Open Source Systems",
+            "description": [
+                "Persistent orchestration and control-plane for long-running agentic coding pipelines.",
+                "Coordinates autonomous AI agents across multi-day lifecycles to prevent context loss.",
+                "Deterministic validation, isolated git worktrees, and distributed state machine orchestration."
+            ],
+            "image": "images/foundry.svg",
+            "tag": [
+                "All",
+                "Open Systems",
+                "Cloud"
+            ],
+            "gitUrl": "https://github.com/syedahmedhaidershah/foundry",
+            "previewUrl": "https://github.com/syedahmedhaidershah/foundry",
+            "region": "Open Source",
+            "pilotYear": "2025",
+            "launchYear": "2026",
+            "duration": "2025-Present"
+        },
+        {
+            "title": "MCP Local Ollama",
+            "subtitle": "Phi-4-mini Inference Bridge",
+            "type": "AI Systems & Tooling",
+            "description": [
+                "Model Context Protocol (MCP) server running Phi-4-mini via local Ollama inference.",
+                "Reduces cloud LLM API costs while preserving developer privacy in local IDE workflows.",
+                "Optimized JSON-RPC protocol implementation for rapid local agent execution."
+            ],
+            "image": "images/mcp-ollama.svg",
+            "tag": [
+                "All",
+                "Open Systems"
+            ],
+            "gitUrl": "https://github.com/syedahmedhaidershah/mcp-local-ollama",
+            "previewUrl": "https://github.com/syedahmedhaidershah/mcp-local-ollama",
+            "region": "Open Source",
+            "pilotYear": "2026",
+            "launchYear": "2026",
+            "duration": "2026"
+        },
+        {
+            "title": "Screen Mind",
+            "subtitle": "Desktop Eye Strain & Screen Wellness",
+            "type": "Desktop App (Tauri v2 & React)",
+            "description": [
+                "Cross-platform desktop application built with Tauri v2, Rust, and React.",
+                "Automates the 20-20-20 eye strain rule with configurable work sessions and break reminders.",
+                "Tracks session break adherence, screen time duration, and daily mood and energy check-ins."
+            ],
+            "image": "images/screen-mind.svg",
+            "tag": [
+                "All",
+                "Open Systems"
+            ],
+            "gitUrl": "https://github.com/syedahmedhaidershah/screen-mind",
+            "previewUrl": "https://github.com/syedahmedhaidershah/screen-mind",
+            "region": "Open Source",
+            "pilotYear": "2025",
+            "launchYear": "2025",
+            "duration": "2025"
+        },
+        {
+            "title": "Dutch State-Exams",
+            "subtitle": "Remote Assessment & Proctoring Platform",
             "type": "SaaS Platform and Services",
             "description": [
                 "A SaaS Remote Assessment platform, used for K-12 State examination during Covid-19 in Netherlands.",
@@ -172,7 +238,8 @@
             "duration": "2019-2021"
         },
         {
-            "title": "Largest EU Football Community - Super-App & IoT",
+            "title": "Largest EU Football Community",
+            "subtitle": "Super-App & Stadium IoT Infrastructure",
             "description": [
                 "A Fan-Engagement Super App for the largest football Community in Europe.",
                 "Tailor made content was pushed to 50,000 Active Concurrent and 1.5M+ users daily during FIFA 2022.",
@@ -194,7 +261,8 @@
             "duration": "2021-2023"
         },
         {
-            "title": "Huge Coffee & Ventures giant - Sites & Cloud Infrastructure",
+            "title": "Huge Coffee & Ventures Giant",
+            "subtitle": "Sites & Multi-Region Cloud Infrastructure",
             "description": [
                 "Solutions and Infrastructure for sites/ventures of a Global Coffee giant with 500M+ Daily Active users and 6.5M+ Active concurrent users.",
                 "Infrastructure was spread across multi-region Kubernetes clusters.",
@@ -213,7 +281,8 @@
             "duration": "2023-2024"
         },
         {
-            "title": "Computer Vision Enabled - Video Intelligence Platform",
+            "title": "Computer Vision Platform",
+            "subtitle": "Video Intelligence & Worker Safety Analytics",
             "description": [
                 "Enhances productivity by identifying patterns and increased energy hours of Workforce.",
                 "Integrations with 3rd Party systems and APIs for data enrichment and cleaning.",
@@ -235,7 +304,8 @@
             "duration": "2021-2022"
         },
         {
-            "title": "Public Blogs and Platforms for Pioneer in Personal Computing OS from 80s",
+            "title": "Personal Computing Pioneer",
+            "subtitle": "Public Blogs & Scale Platforms (80s OS Pioneer)",
             "description": [
                 "Maintained infrastructure and solutions for a pioneer in Personal Computing OS from 80s.",
                 "Highly available and scalable infrastructure for 1000s of daily users.",
@@ -526,6 +596,36 @@
         }
     ],
     "skillsCategorized": {
+        "Agentic AI and Control Systems": [
+            {
+                "name": "Agent Orchestration",
+                "color": "bg-violet-900"
+            },
+            {
+                "name": "Model Context Protocol (MCP)",
+                "color": "bg-violet-900"
+            },
+            {
+                "name": "Autonomous Coding Control Planes",
+                "color": "bg-violet-900"
+            },
+            {
+                "name": "Local LLM Inference (Ollama)",
+                "color": "bg-violet-900"
+            },
+            {
+                "name": "Multi-Agent Architectures",
+                "color": "bg-violet-900"
+            },
+            {
+                "name": "Persistent State for Long-Lived Workflows",
+                "color": "bg-violet-900"
+            },
+            {
+                "name": "Deterministic Verification & Sandboxing",
+                "color": "bg-violet-900"
+            }
+        ],
         "Programming Languages and Frameworks": [
             {
                 "name": "Node.js",
@@ -784,6 +884,51 @@
         ]
     },
     "displaySkillsCategorized": {
+        "Agentic AI and Control Systems": [
+            {
+                "name": "Agent Orchestration",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-plain.svg",
+                "color": "bg-violet-900",
+                "starred": true
+            },
+            {
+                "name": "MCP Protocols",
+                "icon": "https://icon.icepanel.io/AWS/svg/Developer-Tools/CodeCatalyst.svg",
+                "color": "bg-violet-900",
+                "starred": true
+            },
+            {
+                "name": "Control Planes",
+                "icon": "https://icon.icepanel.io/AWS/svg/Management-Governance/Systems-Manager.svg",
+                "color": "bg-violet-900",
+                "starred": true
+            },
+            {
+                "name": "Local LLMs",
+                "icon": "https://icon.icepanel.io/AWS/svg/Management-Governance/Well-Architected-Tool.svg",
+                "color": "bg-violet-900",
+                "starred": true
+            },
+            {
+                "name": "Multi-Agent Systems",
+                "icon": "https://cdn-icons-png.flaticon.com/512/6146/6146577.png",
+                "color": "bg-violet-900",
+                "starred": true
+            },
+            {
+                "name": "Persistent State",
+                "icon": "https://icon.icepanel.io/AWS/svg/Containers/Elastic-Kubernetes-Service.svg",
+                "color": "bg-violet-900",
+                "starred": true
+            },
+            {
+                "name": "Agent Verification",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+                "color": "bg-violet-900",
+                "fill": "#ffffff",
+                "starred": true
+            }
+        ],
         "Programming Languages and Frameworks": [
             {
                 "name": "Node.js",

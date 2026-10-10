@@ -60,13 +60,18 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Open Systems"
+          isSelected={tag === "Open Systems"}
         />
         <ProjectTag
           onClick={handleTagChange}
           name="Cloud"
           isSelected={tag === "Cloud"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
@@ -85,6 +90,7 @@ const ProjectsSection = () => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
+            className="h-full"
           >
             <ProjectCard
               key={project.id}

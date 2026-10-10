@@ -29,7 +29,7 @@ const TAB_DATA = [
                   data-aos="fade-up-left"
                   data-aos-delay="0"
                   data-aos-duration="60"
-                  className="mt-0 tablet:mx-1 grid tablet:grid-cols-2 laptop:grid-cols-5 desktop:grid-cols-7 gap-4 grid-cols-2">
+                  className="mt-0 flex flex-wrap gap-3 items-center">
                   {
                     skills
                       .map((skill, skillIndex) => (
