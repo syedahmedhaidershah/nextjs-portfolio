@@ -3,17 +3,17 @@ import { useTheme } from "next-themes";
 import colors from 'tailwindcss/colors';
 import { content } from "../../../tailwind.config";
 import Image from "next/image";
+import { getAssetPath } from "../libs/asset.lib";
 
-const badgeStyle = {
-  backgroundImage: "url(images/star.png)",
+const getBadgeStyle = () => ({
+  backgroundImage: `url(${getAssetPath("images/star.png")})`,
   backgroundSize: "cover",
   width: "20px",
   height: "20px",
   position: "absolute",
   top: "-10px",
   right: "-10px",
-  position: "absolute",
-};
+});
 
 const SkillChip = ({
   index,
@@ -27,7 +27,7 @@ const SkillChip = ({
   const [mounted,
     setMounted] = useState();
   const [svgIcon, setSvgIcon] = useState('');
-  const [className, setClassName] = useState(`relative grid select-none items-center whitespace-nowrap rounded-md py-2 px-3 font-sans text-xs font-bold uppercase text-white`);
+  const [className, setClassName] = useState(`relative inline-flex items-center select-none rounded-md py-2 px-3.5 font-sans text-xs font-bold uppercase text-white whitespace-nowrap`);
 
   useEffect(() => {
     setMounted(true);
@@ -75,9 +75,7 @@ const SkillChip = ({
       data-aos={starred ? "fade-up-right" : "fade-up-left"}
       data-aos-delay="0"
       data-aos-duration={starred ? "50" + +index * 2 : "1"}
-      className={className
-        .concat(' hover:bg-gray-700 transition-all cursor-pointer')
-        .concat(' !flex flex-row items-center space-x-3 !min-w-fit')}
+      className={`${className} hover:bg-gray-700/80 transition-all cursor-pointer flex-row space-x-2`}
       style={{
         border: '1px solid',
         borderColor: colors[colorName][strength]
@@ -96,7 +94,7 @@ const SkillChip = ({
           || <></>
       }
       <span className="!ml-2 !text-xs">{name}</span>
-      {starred && <div style={badgeStyle}></div>}
+      {starred && <div style={getBadgeStyle()}></div>}
     </div>
   );
 };

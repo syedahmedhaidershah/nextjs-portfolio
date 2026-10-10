@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <radialGradient id="m-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="m-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#0a0d14"/>
+  <circle cx="400" cy="225" r="180" fill="url(#m-glow)"/>
+
+  <!-- Protocol Bridge Line with Data Stream Particles -->
+  <line x1="180" y1="225" x2="620" y2="225" stroke="#1e293b" stroke-width="4"/>
+  <line x1="260" y1="225" x2="540" y2="225" stroke="url(#m-grad)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Client Node (Left) -->
+  <rect x="200" y="185" width="80" height="80" rx="18" fill="#131826" stroke="#8b5cf6" stroke-width="2"/>
+  <path d="M228 215 L242 225 L228 235" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="246" y1="235" x2="254" y2="235" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Protocol Connector Icon (Center) -->
+  <circle cx="400" cy="225" r="38" fill="#111c2e" stroke="#06b6d4" stroke-width="2.5"/>
+  <g stroke="#22d3ee" stroke-width="2" fill="none" stroke-linecap="round">
+    <circle cx="400" cy="225" r="16"/>
+    <line x1="400" y1="201" x2="400" y2="209"/>
+    <line x1="400" y1="241" x2="400" y2="249"/>
+    <line x1="376" y1="225" x2="384" y2="225"/>
+    <line x1="416" y1="225" x2="424" y2="225"/>
+  </g>
+
+  <!-- Local Engine / Ollama Node (Right) -->
+  <rect x="520" y="185" width="80" height="80" rx="18" fill="#131826" stroke="#10b981" stroke-width="2"/>
+  <circle cx="560" cy="225" r="16" fill="none" stroke="#34d399" stroke-width="2.5"/>
+  <circle cx="560" cy="225" r="6" fill="#10b981"/>
+</svg>

@@ -1,0 +1,21 @@
+# Syed Ahmed Haider
+
+> Cloud & Systems Architect, Distributed Systems & Agentic AI Control Systems Engineer.
+
+## Core Capabilities
+- Agentic AI & Control Planes (Autonomous agent orchestration, Model Context Protocol (MCP), persistent state machines, deterministic validation)
+- Cloud & Infrastructure Architecture (AWS EKS, multi-region Kubernetes, Terraform, distributed systems)
+- Systems & Desktop Engineering (Rust, Tauri v2, React, TypeScript, Node.js)
+
+## Open Source Systems
+- Foundry: Persistent orchestration and control-plane for long-running agentic coding pipelines.
+  - Repository: https://github.com/syedahmedhaidershah/foundry
+- MCP Local Ollama: Model Context Protocol bridge running Phi-4-mini locally via Ollama.
+  - Repository: https://github.com/syedahmedhaidershah/mcp-local-ollama
+- Screen Mind: Desktop application for eye strain (20-20-20 rule) and screen session telemetry built with Tauri v2, Rust, and React.
+  - Repository: https://github.com/syedahmedhaidershah/screen-mind
+
+## Public Profiles
+- Website: https://syedahmedhaidershah.com
+- GitHub: https://github.com/syedahmedhaidershah
+- LinkedIn: https://www.linkedin.com/in/syedahmedhaidershah/

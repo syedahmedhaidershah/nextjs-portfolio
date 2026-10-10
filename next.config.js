@@ -4,7 +4,14 @@ const {
     NormalModuleReplacementPlugin
 } = require("webpack");
 
+const basePath = process.env.NEXT_BASE_PATH || '';
+
 const nextConfig = {
+    basePath: basePath,
+    assetPrefix: basePath ? `${basePath}/` : undefined,
+    env: {
+        NEXT_PUBLIC_BASE_PATH: basePath,
+    },
     reactStrictMode: true,
     images: {
         unoptimized: true,

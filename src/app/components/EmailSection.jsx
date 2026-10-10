@@ -86,6 +86,18 @@ const EmailSection = (props) => {
             StringLibrary.phoneNumberToFormattedString(phone2.link)
           }</Link>
         </p>
+        {data.resumeLink && (
+          <div className="mt-8 pt-4 border-t border-[#33353F]/60">
+            <Link
+              href={data.resumeLink}
+              target="_blank"
+              className="inline-flex items-center text-sm text-slate-400 hover:text-white transition group"
+            >
+              <span className="underline decoration-slate-600 group-hover:decoration-white">Detailed resume-style profile</span>
+              <span className="ml-1 text-xs">↗</span>
+            </Link>
+          </div>
+        )}
       </div>
       {formEnabled && (
         <div>

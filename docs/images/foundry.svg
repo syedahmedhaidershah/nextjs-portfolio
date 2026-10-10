@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <radialGradient id="f-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="f-wire" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#0a0d14"/>
+  <circle cx="400" cy="225" r="180" fill="url(#f-glow)"/>
+  
+  <!-- Subtle background grid lines -->
+  <g stroke="#1e293b" stroke-width="1" stroke-dasharray="4 8" opacity="0.4">
+    <line x1="160" y1="225" x2="640" y2="225"/>
+    <line x1="400" y1="80" x2="400" y2="370"/>
+    <circle cx="400" cy="225" r="120" fill="none"/>
+  </g>
+
+  <!-- Orchestration Node Graph -->
+  <g fill="none" stroke="url(#f-wire)" stroke-width="2">
+    <line x1="400" y1="225" x2="280" y2="150" opacity="0.8"/>
+    <line x1="400" y1="225" x2="520" y2="150" opacity="0.8"/>
+    <line x1="400" y1="225" x2="280" y2="300" opacity="0.8"/>
+    <line x1="400" y1="225" x2="520" y2="300" opacity="0.8"/>
+  </g>
+
+  <!-- Worker Nodes -->
+  <circle cx="280" cy="150" r="16" fill="#131826" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="280" cy="150" r="4" fill="#a78bfa"/>
+
+  <circle cx="520" cy="150" r="16" fill="#131826" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="520" cy="150" r="4" fill="#38bdf8"/>
+
+  <circle cx="280" cy="300" r="16" fill="#131826" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="280" cy="300" r="4" fill="#38bdf8"/>
+
+  <circle cx="520" cy="300" r="16" fill="#131826" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="520" cy="300" r="4" fill="#a78bfa"/>
+
+  <!-- Master Orchestrator Core -->
+  <circle cx="400" cy="225" r="32" fill="#1a1f33" stroke="url(#f-wire)" stroke-width="3"/>
+  <circle cx="400" cy="225" r="12" fill="#a78bfa"/>
+  <circle cx="400" cy="225" r="5" fill="#ffffff"/>
+</svg>
